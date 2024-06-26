@@ -1,5 +1,5 @@
 import React from "react";
-import "./Card.css"; // Importa il file CSS per le Cards
+import "./Card.css"; 
 
 function Cards(props) {
   const { title, content, userId } = props;

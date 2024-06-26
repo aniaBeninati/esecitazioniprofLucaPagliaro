@@ -1,4 +1,4 @@
-/* Stile per il main container */
+
 main {
     display: flex;
     justify-content: space-between;
@@ -6,32 +6,32 @@ main {
     padding: 20px;
     background-color: #f0f0f0;
     border-radius: 10px;
-    margin: 20px; /* Aggiunto margine esterno per separare dal resto della pagina */
+    margin: 20px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
-  /* Stile per la sidebar */
+ 
   aside {
     width: 200px;
     background-color: #ddd;
     padding: 10px;
     border-radius: 8px;
-    margin-right: 20px; /* Aggiunto margine a destra per separare dal contenuto principale */
+    margin-right: 20px; 
   }
   
-  /* Stile per la sezione dei menu */
+  
   .Menu {
     flex: 1;
   }
   
-  /* Stile per il titolo dei menu */
+ 
   .Menu h2 {
     font-size: 1.5rem;
     color: #333;
-    margin-bottom: 15px; /* Aumentato il margine inferiore per separare dai contenuti sottostanti */
+    margin-bottom: 15px; 
   }
   
-  /* Stile per ogni elemento di menu */
+ 
   .Menu .menuItem {
     background-color: #ffffff;
     border-radius: 10px;
@@ -41,27 +41,26 @@ main {
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   }
   
-  /* Hover effect per gli elementi di menu */
+
   .Menu .menuItem:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Leggermente aumentata l'ombra durante l'hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); 
   }
   
-  /* Stile per il titolo dell'articolo nella card */
   .article .title {
     font-size: 1.5rem;
     margin-bottom: 10px;
     color: #333;
   }
   
-  /* Stile per la descrizione nella card */
+  
   .article .description {
     font-size: 1.1rem;
     color: #666;
     line-height: 1.6;
   }
   
-  /* Stile per il link "Leggi di più" nella card */
+  
   .article .more-link {
     color: #007bff;
     text-decoration: none;
@@ -72,8 +71,7 @@ main {
   .article .more-link:hover {
     text-decoration: underline;
   }
-  
-  /* Stile per l'icona nella card */
+
   .icon-container {
     display: inline-block;
     margin-bottom: 12px;
@@ -85,7 +83,6 @@ main {
     fill: currentColor;
   }
   
-  /* Stile generale per l'articolo */
   .article {
     background-color: #fff;
     border-radius: 10px;
@@ -95,9 +92,9 @@ main {
     margin-bottom: 20px;
   }
   
-  /* Hover effect per l'articolo */
+ 
   .article:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Leggermente aumentata l'ombra durante l'hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
   }
   

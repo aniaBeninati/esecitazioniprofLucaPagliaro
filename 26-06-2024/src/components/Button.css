@@ -6,13 +6,13 @@
   display: inline-block;
   line-height: 2;
   padding: 0 1rem;
-  color: #222; /* Colore del testo */
-  text-decoration: none; /* Rimuove la sottolineatura */
-  font-size: 1rem; /* Dimensione del font */
-  transition: background-color 0.3s, color 0.3s; /* Transizione per animare il cambio di colore */
+  color: #222;
+  text-decoration: none; 
+  font-size: 1rem; 
+  transition: background-color 0.3s, color 0.3s; 
 }
 
 .btn:hover {
   background-color: #222;
-  color: #fff; /* Colore del testo quando si passa sopra con il mouse */
+  color: #fff; 
 }
