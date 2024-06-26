@@ -7,23 +7,19 @@ import { Button } from "./components/Button.jsx";
 import "./styles/layout.css";
 
 function App() {
-
-
   return (
     <>
-      {/* Content projection - proiezione del contenuto */}
       <Header brand={{ name: "Edgemony" }} className="header" />
-
-      <div className="container">
-        <form style={{ marginTop: "100px" }}>
-          <Button type="button">Sono un button</Button>
-        </form>
-      </div>
 
       <Main />
 
       <footer className="footer">
         <Footer />
+        <div className="container">
+          <form style={{ marginTop: "20px", marginBottom: "20px" }}>
+            <Button type="button">Clicca qui</Button>
+          </form>
+        </div>
       </footer>
     </>
   );

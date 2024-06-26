@@ -1,77 +1,68 @@
-
-main {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 20px;
+.grid-container {
+    display: grid;
+    grid-template-columns: 250px repeat(4, 1fr); /* Sidebar 250px, 4 colonne per le card */
+    gap: 20px; /* Spazio tra le colonne */
+  }
+  
+  .sidebar {
     background-color: #f0f0f0;
-    border-radius: 10px;
-    margin: 20px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
- 
-  aside {
-    width: 200px;
-    background-color: #ddd;
-    padding: 10px;
-    border-radius: 8px;
-    margin-right: 20px; 
-  }
-  
-  
-  .Menu {
-    flex: 1;
-  }
-  
- 
-  .Menu h2 {
-    font-size: 1.5rem;
-    color: #333;
-    margin-bottom: 15px; 
-  }
-  
- 
-  .Menu .menuItem {
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    margin-bottom: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow-y: auto;
+  }
+  
+  .card-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 colonne per le card */
+    gap: 20px; /* Spazio tra le card */
+    padding: 20px;
+    margin-left: 250px; /* Spazio a sinistra del sidebar */
+    justify-items: center; /* Centra le card lungo l'asse orizzontale */
+  }
+  
+  .card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    margin-bottom: 20px;
+    width: calc(25% - 20px);
+    margin-right: 20px;
+    margin-left: 0;
   }
   
-
-  .Menu .menuItem:hover {
+  .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
   }
   
-  .article .title {
+  .card .title {
     font-size: 1.5rem;
     margin-bottom: 10px;
     color: #333;
   }
   
-  
-  .article .description {
+  .card .description {
     font-size: 1.1rem;
     color: #666;
     line-height: 1.6;
   }
   
-  
-  .article .more-link {
+  .card .more-link {
     color: #007bff;
     text-decoration: none;
     display: inline-block;
     margin-top: 12px;
   }
   
-  .article .more-link:hover {
+  .card .more-link:hover {
     text-decoration: underline;
   }
-
+  
   .icon-container {
     display: inline-block;
     margin-bottom: 12px;
@@ -83,18 +74,15 @@ main {
     fill: currentColor;
   }
   
-  .article {
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    margin-bottom: 20px;
+  .card-yellow {
+    background-color: #ffe066;
   }
   
- 
-  .article:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  .card-purple {
+    background-color: #c7a3ff;
+  }
+  
+  .card-blue {
+    background-color: #66b3ff;
   }
   

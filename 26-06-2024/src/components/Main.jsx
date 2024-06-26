@@ -1,18 +1,19 @@
 import React from "react";
 import "./Main.css";
 import Card from "./Card";
+import Sidebar from "./Sidebar"; 
 
 function Main() {
-  return (
-    <main>
-      <aside>Sidebar</aside>
-      <Menu />
-    </main>
-  );
-}
 
-function Menu() {
   const menuItems = [
+    { label: "General", href: "#" },
+    { label: "Teams", href: "#", count: 5 },
+    { label: "Billing", href: "#" },
+    { label: "Invoices", href: "#", count: 3 },
+    { label: "Account", href: "#" },
+  ];
+
+  const cardItems = [
     {
       userId: 1,
       id: 1,
@@ -135,20 +136,30 @@ function Menu() {
       title: "doloribus ad provident suscipit at",
       body: "qui consequuntur ducimus possimus quisquam amet similique\nsuscipit porro ipsam amet\neos veritatis officiis exercitationem vel fugit aut necessitatibus totam\nomnis rerum consequatur expedita quidem cumque explicabo",
     },
+
+    {
+      "userId": 2,
+      "id": 16,
+      "title": "sint suscipit perspiciatis velit dolorum rerum ipsa laboriosam odio",
+      "body": "suscipit nam nisi quo aperiam aut\nasperiores eos fugit maiores voluptatibus quia\nvoluptatem quis ullam qui in alias quia est\nconsequatur magni mollitia accusamus ea nisi voluptate dicta"
+    },
   
   ];
 
 
   return (
     <main>
-      {menuItems.map((item) => (
-        <Card
-          key={item.id}
-          title={item.title}
-          content={item.body}
-          userId={item.userId}
-        />
-      ))}
+      <Sidebar menuItems={menuItems} />
+      <section id="card-list" className="card-list">
+        {cardItems.map((item) => (
+          <Card
+            key={item.id}
+            title={item.title}
+            content={item.body}
+            userId={item.userId}
+          />
+        ))}
+      </section>
     </main>
   );
 }

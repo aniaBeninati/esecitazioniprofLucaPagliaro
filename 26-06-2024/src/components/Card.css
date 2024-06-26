@@ -1,71 +1,64 @@
 .card {
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    margin-bottom: 20px;
-    width: calc(25% - 20px); /* Calcola la larghezza per 4 cards per riga con margine tra loro */
-    margin-right: 20px; /* Spazio tra le cards */
-    margin-left: 0; /* Elimina il margine sinistro della prima card di ogni riga */
-  }
-  
-  .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-  }
-  
-  .card .title {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    color: #333;
-  }
-  
-  .card .description {
-    font-size: 1.1rem;
-    color: #666;
-    line-height: 1.6;
-  }
-  
-  .card .more-link {
-    color: #007bff;
-    text-decoration: none;
-    display: inline-block;
-    margin-top: 12px;
-  }
-  
-  .card .more-link:hover {
-    text-decoration: underline;
-  }
-  
-  .icon-container {
-    display: inline-block;
-    margin-bottom: 12px;
-  }
-  
-  .icon {
-    width: 24px;
-    height: 24px;
-    fill: currentColor;
-  }
-  
-  @media (max-width: 1200px) {
-    .card {
-      width: calc(33.33% - 20px); 
-    }
-  }
-  
-  @media (max-width: 900px) {
-    .card {
-      width: calc(50% - 20px); 
-    }
-  }
-  
-  @media (max-width: 600px) {
-    .card {
-      width: 100%; 
-      margin-right: 0;
-      margin-bottom: 20px;
-    }
-  }
-  
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  margin-bottom: 20px;
+  width: calc(25% - 20px);
+  margin-right: 20px;
+  margin-left: 0;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card .title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.card .description {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.card .more-link {
+  color: #007bff;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 12px;
+}
+
+.card .more-link:hover {
+  text-decoration: underline;
+}
+
+.icon-container {
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}
+
+.card-yellow {
+  background-color: #ffe066;
+}
+
+.card-purple {
+  background-color: #c7a3ff;
+}
+
+.card-blue {
+  background-color: #66b3ff;
+}
+
+

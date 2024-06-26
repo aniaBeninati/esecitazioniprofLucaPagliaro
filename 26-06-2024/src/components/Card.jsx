@@ -1,11 +1,20 @@
 import React from "react";
-import "./Card.css"; 
+import "./Card.css";
 
 function Cards(props) {
   const { title, content, userId } = props;
-  
+
+  let cardColorClass = "";
+  if (userId % 3 === 0) {
+    cardColorClass = "card-yellow";
+  } else if (userId % 3 === 1) {
+    cardColorClass = "card-purple";
+  } else {
+    cardColorClass = "card-blue";
+  }
+
   return (
-    <article className="card">
+    <article className={`card ${cardColorClass}`}>
       <span className="icon-container">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -24,12 +33,12 @@ function Cards(props) {
           />
         </svg>
       </span>
-      
+
       <a href="#">
         <h3 className="title">{title}</h3>
       </a>
       <p className="description">{content}</p>
-      
+
       <span href="#" className="more-link">
         {userId}
       </span>
